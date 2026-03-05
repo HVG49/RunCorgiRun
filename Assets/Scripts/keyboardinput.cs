@@ -14,15 +14,15 @@ public class KeyBoardInput : MonoBehaviour
         {
             Corgi.Move(Vector2.up);
         }
-        if (keyboard.wKey.isPressed)
+        if (keyboard.sKey.isPressed)
         {
             Corgi.Move(Vector2.down);
         }
-        if (keyboard.wKey.isPressed)
+        if (keyboard.aKey.isPressed)
         {
             Corgi.Move(Vector2.left);
         }
-        if (keyboard.wKey.isPressed)
+        if (keyboard.dKey.isPressed)
         {
             Corgi.Move(Vector2.right);
         }
