@@ -1,16 +1,32 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class keyboardinput : MonoBehaviour
+public class KeyBoardInput : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public Corgi Corgi;
+    
     void Update()
     {
-        
+        Keyboard keyboard = Keyboard.current;
+
+        if (keyboard.wKey.isPressed)
+        {
+            Corgi.Move(Vector2.up);
+        }
+        if (keyboard.wKey.isPressed)
+        {
+            Corgi.Move(Vector2.down);
+        }
+        if (keyboard.wKey.isPressed)
+        {
+            Corgi.Move(Vector2.left);
+        }
+        if (keyboard.wKey.isPressed)
+        {
+            Corgi.Move(Vector2.right);
+        }
     }
+    
+ 
 }
